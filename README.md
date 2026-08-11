@@ -1,47 +1,94 @@
-# Crosspost Helper
+<p align="center">
+  <img src="assets/crossposthelperbanner.png" alt="Crosspost Helper" width="100%">
+</p>
 
-A local-first image library and cross-posting helper for artists.
+<h1 align="center">Crosspost Helper</h1>
 
-Crosspost Helper keeps your AI image library organised on your own machine, helps you choose what to post next, and makes sure each image only goes to the networks you actually intended. It is built for manual posting, careful review, and quiet duplicate protection — no accounts, no cloud sync, nothing leaves your computer unless you send it.
+<p align="center">
+  A local-first image library and cross-posting helper for artists.<br>
+  Your library stays on your machine. Nothing is uploaded unless you send it.
+</p>
 
-**[Download the latest release](https://github.com/valerie-4659/crossposthelper-app/releases/latest)** · [itch.io page](https://valerie-4659.itch.io/crossposthelper) · [Wiki](https://github.com/valerie-4659/crossposthelper-app/wiki)
+<p align="center">
+  <a href="https://github.com/valerie-4659/crossposthelper-app/releases/latest"><b>⬇ Download</b></a> ·
+  <a href="https://github.com/valerie-4659/crossposthelper-app/wiki">Wiki</a> ·
+  <a href="CHANGELOG.md">What's new</a> ·
+  <a href="https://github.com/valerie-4659/crossposthelper-app/issues">Report a problem</a> ·
+  <a href="https://valerie-4659.itch.io/crossposthelper">itch.io</a>
+</p>
+
+---
 
 ## What it does
 
-- **Library** — scans your image folders and indexes them locally. Prompt metadata, dominant colour and perceptual hashes are read out of the files themselves.
-- **Picker** — surfaces what to post next instead of making you scroll.
-- **AI Post** — drafts a caption from the image, with separate controls for how explicit and how it sounds, and tells you what the settings will produce before you spend anything.
-- **Duplicate protection** — remembers what already went where, per network.
-- **Browser extension** — hands the image and text to the posting page; you press send.
+You have thousands of generated images and a handful of accounts to post them to. The hard parts are not the posting — they are remembering what you already posted where, finding the one image you meant, and writing something to go with it.
+
+**Keeps the library straight.** Point it at your output folders and it indexes them: prompts read out of the PNG metadata, dominant colour, perceptual hashes for near-duplicates. Rescanning only looks at what changed, so an 11,000-image folder takes seconds rather than minutes.
+
+**Helps you choose.** The Picker surfaces what to post next instead of making you scroll. Ratings, folders, colour, people count, "not posted anywhere yet" — filter down to the shortlist, then decide.
+
+**Writes the caption with you.** Two independent dials: how explicit the post is, and how it sounds. Before you spend anything, it says in plain words what those settings will produce.
+
+**Remembers where things went.** Per network, per image. It will not let you post the same picture to the same place twice by accident.
+
+**Hands off to the browser.** A companion extension fills the post page with the image and the text. You look at it and press send — nothing posts itself behind your back.
+
+<p align="center">
+  <img src="assets/screenshot-library.png" alt="The library, grouped by folder" width="49%">
+  <img src="assets/screenshot-ai-post.png" alt="Writing a post, with the mood pad" width="49%">
+</p>
 
 ## Install
 
-Download the build for your platform from the [latest release](https://github.com/valerie-4659/crossposthelper-app/releases/latest).
+Grab the file for your system from the [latest release](https://github.com/valerie-4659/crossposthelper-app/releases/latest).
 
-| Platform | File |
+| System | File |
 |---|---|
-| macOS | `.dmg` |
+| macOS (Apple Silicon) | `.dmg` |
 | Windows | `.exe` |
-| Linux | `.AppImage` |
+| Linux | `.AppImage` or `.deb` |
 
-### The builds are unsigned
+### The first launch will warn you
 
-There is no Apple Developer ID and no Windows code-signing certificate behind these builds, so the operating system will warn you the first time you open one.
+These builds are not code-signed, so the operating system does not recognise the publisher.
 
-- **macOS** — Gatekeeper will refuse the first launch. Right-click the app → **Open**, then confirm. Or allow it under System Settings → Privacy & Security.
-- **Windows** — SmartScreen shows a blue warning. **More info** → **Run anyway**.
+- **macOS** — right-click the app, choose **Open**, then confirm. Once is enough.
+- **Windows** — SmartScreen shows a blue box. **More info** → **Run anyway**.
 
-This is what an unsigned build looks like; it is not a sign that anything is wrong with the download. If you would rather not take that on trust, the [itch.io app](https://itch.io/app) installs and updates it for you.
+That warning is about a missing certificate, not about the file. If you would rather not take that on trust, the [itch.io app](https://itch.io/app) installs and updates it for you.
 
-## Support
+There is a fuller walkthrough with pictures in the [Installation guide](https://github.com/valerie-4659/crossposthelper-app/wiki/Installation).
 
-- **Something broken?** [Open an issue](https://github.com/valerie-4659/crossposthelper-app/issues) — include your platform, the app version from the sidebar, and what you did just before it went wrong.
-- **How do I…?** The [Wiki](https://github.com/valerie-4659/crossposthelper-app/wiki) covers installation, FAQ and troubleshooting.
+## Getting started
+
+1. **Scan** → add the folder your images live in. First scan builds thumbnails; later ones only pick up what changed.
+2. **Settings** → add the networks you post to, and an API key if you want AI captions. Keys stay on your machine.
+3. **Library** or **Picker** → choose images.
+4. **AI Post** → set the tone, generate, edit the text yourself if you like.
+5. **Send** → the browser extension fills the post page. You press send.
 
 ## Privacy
 
-Everything stays on your machine: the image index, the post history and your settings all live in a local database. There is no account and no telemetry. The app reaches the network in exactly three cases — when you ask an AI provider for a caption using your own API key, when it checks this page for a newer version, and when you send a post.
+Everything lives in a local database: the index, the post history, your settings. There is no account, no sync and no telemetry.
 
-## Source
+The app opens a network connection in exactly three situations, all of them started by you:
 
-This repository carries the releases, the wiki and the issue tracker. The source is not public.
+- asking an AI provider for a caption, with **your** API key
+- checking this page for a newer version
+- sending a post
+
+## Something broken?
+
+[Open an issue](https://github.com/valerie-4659/crossposthelper-app/issues/new) and include your platform, the version from the bottom of the sidebar, and what you did just before it went wrong. That is usually enough to find it.
+
+The [Troubleshooting page](https://github.com/valerie-4659/crossposthelper-app/wiki/Troubleshooting) covers the ones that come up most.
+
+## About this repository
+
+This is where the releases, the wiki and the issue tracker live. The source is not public.
+
+---
+
+<p align="center">
+  <sub>Built by Valerie · <a href="https://valerie-4659.itch.io/crossposthelper">itch.io</a></sub>
+</p>
