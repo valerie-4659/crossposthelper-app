@@ -11,8 +11,8 @@
 
 <p align="center">
   <a href="https://github.com/valerie-4659/crossposthelper-app/releases/latest"><b>⬇ Download</b></a> ·
-  <a href="docs/CrosspostHelperGuide.pdf"><b>📖 Guide (PDF)</b></a> ·
-  <a href="docs/CrosspostHelperOverview.pdf">Overview (PDF)</a> ·
+  <a href="https://github.com/valerie-4659/crossposthelper-app/raw/main/docs/CrosspostHelperGuide.pdf"><b>📖 Guide (PDF)</b></a> ·
+  <a href="https://github.com/valerie-4659/crossposthelper-app/raw/main/docs/CrosspostHelperOverview.pdf">Overview (PDF)</a> ·
   <a href="https://github.com/valerie-4659/crossposthelper-app/wiki">Wiki</a> ·
   <a href="CHANGELOG.md">What's new</a> ·
   <a href="https://github.com/valerie-4659/crossposthelper-app/issues">Report a problem</a> ·
@@ -24,14 +24,14 @@
 ## Read the guides
 
 <p align="center">
-  <a href="docs/CrosspostHelperOverview.pdf"><img src="assets/overview-cover.jpg" alt="Crosspost Helper overview" height="300"></a>
+  <a href="https://github.com/valerie-4659/crossposthelper-app/raw/main/docs/CrosspostHelperOverview.pdf"><img src="assets/overview-cover.jpg" alt="Crosspost Helper overview" height="300"></a>
   &nbsp;
-  <a href="docs/CrosspostHelperGuide.pdf"><img src="assets/guide-cover.jpg" alt="Crosspost Helper guide" height="300"></a>
+  <a href="https://github.com/valerie-4659/crossposthelper-app/raw/main/docs/CrosspostHelperGuide.pdf"><img src="assets/guide-cover.jpg" alt="Crosspost Helper guide" height="300"></a>
 </p>
 
 <p align="center">
-  <a href="docs/CrosspostHelperOverview.pdf"><b>Overview</b></a> — what the app is and what it does, in 13 pages.<br>
-  <a href="docs/CrosspostHelperGuide.pdf"><b>The complete guide</b></a> — setup and every part of the app, chapter by chapter.
+  <a href="https://github.com/valerie-4659/crossposthelper-app/raw/main/docs/CrosspostHelperOverview.pdf"><b>Overview</b></a> — what the app is and what it does, in 13 pages.<br>
+  <a href="https://github.com/valerie-4659/crossposthelper-app/raw/main/docs/CrosspostHelperGuide.pdf"><b>The complete guide</b></a> — setup and every part of the app, chapter by chapter.
 </p>
 
 ---
